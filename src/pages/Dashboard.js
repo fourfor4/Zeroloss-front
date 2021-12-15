@@ -34,6 +34,9 @@ import {
   FaReddit,
   FaBolt,
   FaTelegramPlane,
+  FaArrowRight,
+  FaQuora,
+  FaQuoteLeft
 } from 'react-icons/fa'
 
 export default function Dashboard() {
@@ -308,8 +311,9 @@ export default function Dashboard() {
             </div>
           </div>
           <div className='p-5 text-center'>
-            <button className='bg-gold text-black py-3 px-10 rounded-md font-semibold'>
+            <button className='bg-gold text-black py-3 px-10 rounded-md font-semibold flex mx-auto items-center arrow-right-btn'>
               How add to wallet?
+              <FaArrowRight className='ml-2 arrow-right-icon' />
             </button>
           </div>
         </div>
@@ -424,6 +428,9 @@ export default function Dashboard() {
       <section className='bg-gray-100 py-8'>
         <div className='container text-black'>
           <div className='md:w-4/5 mx-auto p-14 rounded-md bg-white'>
+            <div className='text-3xl mb-3'>
+              <FaQuoteLeft />
+            </div>
             <div className='text-base md:text-xl font-semibold leading-relaxed mb-4'>
               The ZeroLoss platform is focused on exposing the unbanked population to the use of cryptocurrency in Defi through our POE Algorithm, and to switch from fiat-digital-fiat funds. Holders of zeroloss token ZLT earn value interoperably on every transaction.
             </div>
@@ -458,8 +465,9 @@ export default function Dashboard() {
             </p>
           </div>
           <div className='ml-auto pt-6 lg:py-0 text-right'>
-            <button className='py-2 px-8 border-4 border-white rounded-md bg-gold text-black text-lg font-semibold'>
+            <button className='ml-auto py-2 px-8 border-4 border-white rounded-md bg-gold text-black text-lg font-semibold flex items-center arrow-right-btn'>
               GO!
+              <FaArrowRight className='ml-3 arrow-right-icon' />
             </button>
           </div>
         </div>
@@ -471,16 +479,18 @@ export default function Dashboard() {
               <div className='hover:text-blue-400 text-lg'>
                 The total circulatung supply of ZLT is fixed and will linerly grow value interoperably with our POE Algorithm as we continue to grow globally
               </div>
-              <div className='mt-3 text-gold'>
+              <div className='mt-3 text-gold flex items-center arrow-right-btn'>
                 Read more
+                <FaArrowRight className='ml-3 arrow-right-icon' />
               </div>
             </div>
             <div className='rounded-md p-8 text-black font-semibold shadow-md cursor-pointer hover:shadow-xl border-1 border-gray-300'>
               <div className='hover:text-blue-400 text-lg'>
                 The total circulatung supply of ZLT is fixed and will linerly grow value interoperably with our POE Algorithm as we continue to grow globally
               </div>
-              <div className='mt-3 text-gold'>
+              <div className='mt-3 text-gold flex items-center arrow-right-btn'>
                 Read more
+                <FaArrowRight className='ml-3 arrow-right-icon' />
               </div>
             </div>
           </div>

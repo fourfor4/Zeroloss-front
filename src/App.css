@@ -124,6 +124,16 @@ body {
   bottom: auto;
   left: auto;
 }
+
+.arrow-right-btn .arrow-right-icon {
+  transition: .4s all;
+}
+
+.arrow-right-btn:hover .arrow-right-icon {
+  transition: .4s all;
+  transform: translateX(10px);
+}
+
 .fade-in {
 	opacity: 1;
 	animation-name: fadeInOpacity;
