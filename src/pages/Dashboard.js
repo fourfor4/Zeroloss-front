@@ -26,6 +26,16 @@ import apeswap from '../assets/images/apeswap.png'
 
 import Zerolossrtagolds from '../assets/images/Zerolossrtagolds.png'
 
+import {
+  FaHandshake,
+  FaKey,
+  FaFlask,
+  FaTwitter,
+  FaReddit,
+  FaBolt,
+  FaTelegramPlane,
+} from 'react-icons/fa'
+
 export default function Dashboard() {
   return (
     <div className='w-full h-full text-white z-10'>
@@ -47,8 +57,8 @@ export default function Dashboard() {
             </button>
           </div>
           <div className='mb-20'>
-            <div>
-
+            <div className='text-gold text-5xl mb-6'>
+              <FaHandshake />
             </div>
             <div className='text-gray-400'>
               <div className='text-2xl'>
@@ -60,8 +70,8 @@ export default function Dashboard() {
             </div>
           </div>
           <div className='mb-20 ml-10'>
-            <div>
-
+            <div className='text-gold text-5xl mb-6'>
+              <FaBolt />
             </div>
             <div className='text-gray-400'>
               <div className='text-2xl'>
@@ -73,8 +83,8 @@ export default function Dashboard() {
             </div>
           </div>
           <div className='mb-20 ml-10'>
-            <div>
-
+            <div className='text-gold text-5xl mb-6'>
+              <FaKey />
             </div>
             <div className='text-gray-400'>
               <div className='text-2xl'>
@@ -86,8 +96,8 @@ export default function Dashboard() {
             </div>
           </div>
           <div className='mb-20 ml-10'>
-            <div>
-
+            <div className='text-gold text-5xl mb-6'>
+              <FaFlask />
             </div>
             <div className='text-gray-400'>
               <div className='text-2xl'>
@@ -490,15 +500,15 @@ export default function Dashboard() {
               Buy
             </p>
           </div>
-          <div className='text-center text-gray-400 leading-loose font-semibold flex justify-center py-11 border-b-1 border-gray-500'>
+          <div className='text-3xl text-center text-white leading-loose font-semibold flex justify-center py-11 border-b-1 border-gray-500'>
             <p className='mx-5'>
-              Launch App
+              <FaTelegramPlane />
             </p>
             <p className='mx-5'>
-              FAQ
+              <FaTwitter />
             </p>
             <p className='mx-5'>
-              Buy
+              <FaReddit />
             </p>
           </div>
           <div className='py-9 text-gray-400 text-center text-sm md:text-base'>
