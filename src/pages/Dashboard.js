@@ -131,8 +131,8 @@ export default function Dashboard() {
             </button>
           </div>
           <div className='mb-20'>
-            <div>
-
+            <div className='text-gold text-5xl mb-6'>
+              <FaHandshake className='mx-auto' />
             </div>
             <div className='text-gray-400'>
               <div className='text-xl'>
@@ -143,9 +143,9 @@ export default function Dashboard() {
               </div>
             </div>
           </div>
-          <div className='mb-20 ml-10'>
-            <div>
-
+          <div className='mb-20'>
+            <div className='text-gold text-5xl mb-6'>
+              <FaBolt className='mx-auto' />
             </div>
             <div className='text-gray-400'>
               <div className='text-xl'>
@@ -156,9 +156,9 @@ export default function Dashboard() {
               </div>
             </div>
           </div>
-          <div className='mb-20 ml-10'>
-            <div>
-
+          <div className='mb-20'>
+            <div className='text-gold text-5xl mb-6'>
+              <FaKey className='mx-auto' />
             </div>
             <div className='text-gray-400'>
               <div className='text-xl'>
@@ -169,9 +169,9 @@ export default function Dashboard() {
               </div>
             </div>
           </div>
-          <div className='mb-20 ml-10'>
-            <div>
-
+          <div className='mb-20'>
+            <div className='text-gold text-5xl mb-6'>
+              <FaFlask className='mx-auto' />
             </div>
             <div className='text-gray-400'>
               <div className='text-xl'>
