@@ -31,7 +31,13 @@ body {
 .-z-1 {
   z-index: -1;
 }
-
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 8px;
+}
 .nav {
   transition: all 0.1s linear;
   /* position: fixed; */
