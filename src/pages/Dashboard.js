@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import TextTransition, {presets} from 'react-text-transition'
+
 import hero from '../assets/images/hero-11.png'
 
 import defi from '../assets/images/Defi.png'
@@ -40,13 +42,151 @@ import {
 } from 'react-icons/fa'
 
 export default function Dashboard() {
+
+  const [texts, setTexts] = useState([
+    'Zeroloss',
+    'Freedom'
+  ])
+
+  const titleGroup1 = ['Z', 'F']
+  const titleGroup2 = ['e', 'r']
+  const titleGroup3 = ['r', 'e']
+  const titleGroup4 = ['o', 'e']
+  const titleGroup5 = ['l', 'd']
+  const titleGroup6 = ['o', 'o']
+  const titleGroup7 = ['s', 'm']
+  const titleGroup8 = ['s', '']
+
+  const [titleIndex1, setTitleIndex1] = React.useState(0);
+  const [titleIndex2, setTitleIndex2] = React.useState(0);
+  const [titleIndex3, setTitleIndex3] = React.useState(0);
+  const [titleIndex4, setTitleIndex4] = React.useState(0);
+  const [titleIndex5, setTitleIndex5] = React.useState(0);
+  const [titleIndex6, setTitleIndex6] = React.useState(0);
+  const [titleIndex7, setTitleIndex7] = React.useState(0);
+  const [titleIndex8, setTitleIndex8] = React.useState(0);
+
+  React.useEffect(() => {
+    let titleInterval1;
+    let titleInterval2;
+    let titleInterval3;
+    let titleInterval4;
+    let titleInterval5;
+    let titleInterval6;
+    let titleInterval7;
+    let titleInterval8;
+    setTimeout(() => {
+      titleInterval1 = setInterval(() => {
+        setTitleIndex1(titleIndex1 => titleIndex1 + 1)
+      }, 3000);
+    }, 0);
+    setTimeout(() => {
+      titleInterval2 = setInterval(() => {
+        setTitleIndex2(titleIndex2 => titleIndex2 + 1)
+      }, 3000);
+    }, 50);
+    setTimeout(() => {
+      titleInterval3 = setInterval(() => {
+        setTitleIndex3(titleIndex3 => titleIndex3 + 1)
+      }, 3000);
+    }, 150);
+    setTimeout(() => {
+      titleInterval4 = setInterval(() => {
+        setTitleIndex4(titleIndex4 => titleIndex4 + 1)
+      }, 3000);
+    }, 200);
+    setTimeout(() => {
+      titleInterval5 = setInterval(() => {
+        setTitleIndex5(titleIndex5 => titleIndex5 + 1)
+      }, 3000);
+    }, 250);
+    setTimeout(() => {
+      titleInterval6 = setInterval(() => {
+        setTitleIndex6(titleIndex6 => titleIndex6 + 1)
+      }, 3000);
+    }, 300);
+    setTimeout(() => {
+      titleInterval7 = setInterval(() => {
+        setTitleIndex7(titleIndex7 => titleIndex7 + 1)
+      }, 3000);
+    }, 350);
+    setTimeout(() => {
+      titleInterval8 = setInterval(() => {
+        setTitleIndex8(titleIndex8 => titleIndex8 + 1)
+      }, 3000);
+    }, 400);
+    return () => {
+      clearTimeout(titleInterval1);
+      clearTimeout(titleInterval2);
+      clearTimeout(titleInterval3);
+      clearTimeout(titleInterval4);
+      clearTimeout(titleInterval5);
+      clearTimeout(titleInterval6);
+      clearTimeout(titleInterval7);
+      clearTimeout(titleInterval8);
+    }
+  }, []);
+
+
   return (
     <div className='w-full h-full text-white z-10'>
       <section className='container py-5 hidden lg:block'>
         <img className='absolute right-0 inset-y-1/2 w-5/12' src={hero} />
         <div className='w-3/5'>
-          <div className='text-5xl font-bold mb-7'>
-            This is <span className='text-gold'> Zeroloss</span>
+          <div className='text-5xl font-bold mb-7 flex'>
+            This is 
+            <span className='text-gold ml-3'> 
+              <TextTransition
+                text={ titleGroup1[titleIndex1 % titleGroup1.length] }
+                springConfig={ presets.wobbly }
+                direction='down'
+              />
+            </span>
+            <span className='text-gold'>  
+              <TextTransition
+                text={ titleGroup2[titleIndex2 % titleGroup2.length] }
+                springConfig={ presets.wobbly }
+              />
+            </span>
+            <span className='text-gold'>  
+              <TextTransition
+                text={ titleGroup3[titleIndex3 % titleGroup3.length] }
+                springConfig={ presets.wobbly }
+                direction='down'
+              />
+            </span>
+            <span className='text-gold'>  
+              <TextTransition
+                text={ titleGroup4[titleIndex4 % titleGroup4.length] }
+                springConfig={ presets.wobbly }
+              />
+            </span>
+            <span className='text-gold'>  
+              <TextTransition
+                text={ titleGroup5[titleIndex5 % titleGroup5.length] }
+                springConfig={ presets.wobbly }
+                direction='down'
+              />
+            </span>
+            <span className='text-gold'>  
+              <TextTransition
+                text={ titleGroup6[titleIndex6 % titleGroup6.length] }
+                springConfig={ presets.wobbly }
+              />
+            </span>
+            <span className='text-gold'>  
+              <TextTransition
+                text={ titleGroup7[titleIndex7 % titleGroup7.length] }
+                springConfig={ presets.wobbly }
+                direction='down'
+              />
+            </span>
+            <span className='text-gold'>  
+              <TextTransition
+                text={ titleGroup8[titleIndex8 % titleGroup8.length] }
+                springConfig={ presets.wobbly }
+              />
+            </span>
           </div>
           <div className='text-xl text-gray-400 border-l-4 border-gray-400 pl-5 py-1 mb-14'>
             Defi 2.0 Dapp and LAUNCHPAD POWERED BY ZEROLOSS
@@ -290,7 +430,7 @@ export default function Dashboard() {
           <div className='text-gray-700 text-lg py-2'>
             Wallets for BEP20 and ERC20 Tokens
           </div>
-          <div className='py-8 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-b-1 border-gray-200'>
+          <div className='py-8 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border-b-1 border-gray-200 fade-up'>
             <div>
               <img src={trustwallet} className='w-3/5 md:w-4/5 mx-auto' />
             </div>
