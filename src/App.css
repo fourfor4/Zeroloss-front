@@ -130,7 +130,8 @@ body {
   bottom: auto;
   left: auto;
 }
-/* .svg-shape--top {
+
+.svg-shape--top {
   position: absolute!important;
   top: -2px;
   right: auto;
@@ -144,7 +145,7 @@ body {
   right: 0;
   bottom: -2px;
   left: 0;
-} */
+}
 
 .arrow-right-btn .arrow-right-icon {
   transition: .4s all;

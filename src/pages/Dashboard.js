@@ -601,7 +601,7 @@ export default function Dashboard() {
               We raise funds from our community for Charity and Community Building
             </p>
           </div>
-          <div className='ml-auto pt-6 lg:py-0 text-right'>
+          <div className='ml-auto pt-6 lg:py-0 text-right z-10'>
             <button className='ml-auto py-2 px-8 border-4 border-white rounded-md bg-gold text-black text-lg font-semibold flex items-center arrow-right-btn'>
               GO!
               <FaArrowRight className='ml-3 arrow-right-icon' />
