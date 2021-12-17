@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-
 import {
   BrowserRouter,
   Routes,
@@ -11,6 +9,7 @@ import 'react-js-stickynav/dist/index.css'
 import './App.css';
 import Dashboard from './pages/Dashboard';
 import Navbar from './layouts/Navbar';
+import Idolaunchpad from './pages/Idolaunchpad';
 
 function App() {
 
@@ -21,6 +20,7 @@ function App() {
       </StickyNav>
       <Routes>
         <Route path="/" element={<Dashboard />} />
+        <Route path="/idolaunchpad" element={<Idolaunchpad />} />
       </Routes>
     </BrowserRouter>
   );

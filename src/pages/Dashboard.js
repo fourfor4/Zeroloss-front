@@ -32,14 +32,11 @@ import {
   FaHandshake,
   FaKey,
   FaFlask,
-  FaTwitter,
-  FaReddit,
   FaBolt,
-  FaTelegramPlane,
   FaArrowRight,
-  FaQuora,
   FaQuoteLeft
 } from 'react-icons/fa'
+import Footer from '../layouts/Footer'
 
 export default function Dashboard() {
 
@@ -57,16 +54,16 @@ export default function Dashboard() {
   const titleGroup7 = ['s', 'm']
   const titleGroup8 = ['s', '']
 
-  const [titleIndex1, setTitleIndex1] = React.useState(0);
-  const [titleIndex2, setTitleIndex2] = React.useState(0);
-  const [titleIndex3, setTitleIndex3] = React.useState(0);
-  const [titleIndex4, setTitleIndex4] = React.useState(0);
-  const [titleIndex5, setTitleIndex5] = React.useState(0);
-  const [titleIndex6, setTitleIndex6] = React.useState(0);
-  const [titleIndex7, setTitleIndex7] = React.useState(0);
-  const [titleIndex8, setTitleIndex8] = React.useState(0);
+  const [titleIndex1, setTitleIndex1] = useState(0);
+  const [titleIndex2, setTitleIndex2] = useState(0);
+  const [titleIndex3, setTitleIndex3] = useState(0);
+  const [titleIndex4, setTitleIndex4] = useState(0);
+  const [titleIndex5, setTitleIndex5] = useState(0);
+  const [titleIndex6, setTitleIndex6] = useState(0);
+  const [titleIndex7, setTitleIndex7] = useState(0);
+  const [titleIndex8, setTitleIndex8] = useState(0);
 
-  React.useEffect(() => {
+  useEffect(() => {
     let titleInterval1;
     let titleInterval2;
     let titleInterval3;
@@ -115,18 +112,18 @@ export default function Dashboard() {
         setTitleIndex8(titleIndex8 => titleIndex8 + 1)
       }, 3000);
     }, 400);
+
     return () => {
-      clearTimeout(titleInterval1);
-      clearTimeout(titleInterval2);
-      clearTimeout(titleInterval3);
-      clearTimeout(titleInterval4);
-      clearTimeout(titleInterval5);
-      clearTimeout(titleInterval6);
-      clearTimeout(titleInterval7);
-      clearTimeout(titleInterval8);
+      clearInterval(titleInterval1);
+      clearInterval(titleInterval2);
+      clearInterval(titleInterval3);
+      clearInterval(titleInterval4);
+      clearInterval(titleInterval5);
+      clearInterval(titleInterval6);
+      clearInterval(titleInterval7);
+      clearInterval(titleInterval8);
     }
   }, []);
-
 
   return (
     <div className='w-full h-full text-white z-10'>
@@ -636,49 +633,7 @@ export default function Dashboard() {
           </div>
         </div>
       </section>
-      <section>
-        <div className='container'>
-          <img src={Zerolossrtagolds} className="mx-auto my-10" />
-          <div className='text-center text-gray-400 leading-loose font-semibold md:flex md:justify-center pb-11 border-b-1 border-gray-500'>
-            <p className='mx-5'>
-              Launch App
-            </p>
-            <p className='mx-5'>
-              FAQ
-            </p>
-            <p className='mx-5'>
-              Buy
-            </p>
-          </div>
-          <div className='text-3xl text-center text-white leading-loose font-semibold flex justify-center py-11 border-b-1 border-gray-500'>
-            <p className='mx-5'>
-              <FaTelegramPlane />
-            </p>
-            <p className='mx-5'>
-              <FaTwitter />
-            </p>
-            <p className='mx-5'>
-              <FaReddit />
-            </p>
-          </div>
-          <div className='py-9 text-gray-400 text-center text-sm md:text-base'>
-            <div className='mb-5'>
-              Made with ❤️ for the ZEROLOSS Community
-            </div>
-            <div className='leading-loose mb-6'>
-              <p>
-                For all marketing and advertising, please contact our Marketing team:
-              </p>
-              <p className='text-white'>
-                marketing@zeroloss.org
-              </p>
-            </div>
-            <div className='mb-8'>
-              For general inquiries, please contact: <span className='text-white'>info@zeroloss.org</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Footer />
     </div>
   )
 }
