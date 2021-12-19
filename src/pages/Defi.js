@@ -31,7 +31,7 @@ export default function Defi() {
                             </p>
                         </div>
                         <div className='flex items-center p-2 rounded-md bg-white'>
-                            <input className='ml-5 focus:outline-none' placeholder='Enter your email' style={{width: 'calc(100% - 150px)'}} />
+                            <input className='ml-5 focus:outline-none' placeholder='Enter your email' style={{width: 'calc(100% - 180px)'}} />
                             <button className='ml-auto bg-gold text-black font-semibold py-4 px-6 rounded-md'>
                                 Notify me
                             </button>
