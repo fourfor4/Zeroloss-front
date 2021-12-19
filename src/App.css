@@ -156,8 +156,13 @@ body {
   transform: translateX(10px);
 }
 
-.launchpad-svg-back {
-
+.idolauchpad_btn {
+  transition: .4s all;
+}
+.idolauchpad_btn:hover {
+  transition: .4s all;
+  transform: translateY(-8px);
+  background: yellow;
 }
 
 .fade-in {

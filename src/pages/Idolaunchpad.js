@@ -2,11 +2,40 @@ import React from 'react'
 import rocket from '../assets/images/rocket.png'
 import idolaunchpad from '../assets/images/idolaunchpad.png'
 import Footer from '../layouts/Footer'
-
+import { FaShoppingBasket } from 'react-icons/fa'
 
 export default function Idolaunchpad() {
   return (
     <div>
+      <section className='bg-gray-900 py-32'>
+        <div className='container'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
+            <div className='flex items-center'>
+              <img src={rocket} className='mx-auto' />
+            </div>
+            <div className='text-center lg:text-left text-white py-4 font-semibold'>
+              <div className='text-4xl mb-8'>
+                IDO LaunchPad
+              </div>
+              <div className='leading-relaxed mb-12'>
+                <p>
+                  Use <span className='text-gold'>Zeroloss</span> Token ZLT, to buy in early in IDO projects.
+                </p>
+                <p>
+                  ZEROLOSS IDO will require new projects to lock a large share of their liquidity and team tokens on our third party partner’s locker platform. We make it easy, safe and secure to lock any BEP-20 based token in seconds protecting investors from ‘rug pulls’.
+                </p>
+                <p>
+                  Hold 2000 ZLT to get whitelisted for IDO's
+                </p>
+              </div>
+              <button className='bg-gold mx-auto lg:mx-0 py-5 px-7 rounded-md text-black font-bold flex items-center idolauchpad_btn shadow-md'>
+                <FaShoppingBasket className='mr-5' />
+                buy ZLT for IDO
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className='bg-white py-6'>
         <div className='container text-center'>
           <div className='text-4xl lg:text-5xl font-bold py-8'>
