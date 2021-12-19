@@ -7,7 +7,7 @@ import Sidebar from './Sidebar'
 
 export default function Navbar() {
   const [sideBarOpen, setSideBarOpen] = useState(false)
-
+  const lightPaperLink = 'https://drive.google.com/file/d/16bC22RMgPc5hUMIYpJELsNtWB6GMCLgb/view?usp=sharing'
   return (
     <>
       <div className='text-white px-2 py-5'>
@@ -19,7 +19,7 @@ export default function Navbar() {
             <Link to={'/defi'}><span className='p-2 cursor-pointer font-semibold text-sm hover:text-gray-300'>Launch App</span></Link>
             <Link to={'/idolaunchpad'}><span className='p-2 cursor-pointer font-semibold text-sm hover:text-gray-300'>IDO Launchpad</span></Link>
             <Link to={'/rugchecker'}><span className='p-2 cursor-pointer font-semibold text-sm hover:text-gray-300'>Rug Checker</span></Link>
-            <span className='p-2 cursor-pointer font-semibold text-sm hover:text-gray-300'>LightPaper</span>
+            <a href={lightPaperLink} target="_blank"><span className='p-2 cursor-pointer font-semibold text-sm hover:text-gray-300'>LightPaper</span></a>
             <span className='p-2 cursor-pointer font-semibold text-sm hover:text-gray-300'>FAQ</span>
           </div>
           <button className='ml-3 rounded-md font-semibold border-1 border-white py-2 px-7 hover:border-gray-300 hover:text-gray-300'>
