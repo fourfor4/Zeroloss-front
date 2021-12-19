@@ -7,6 +7,9 @@ body {
 .bg-dimgray {
   background-color: dimgray;
 }
+.bg-darkindigo {
+  background-color: #070124;
+}
 .text-gold {
   color: gold;
 }

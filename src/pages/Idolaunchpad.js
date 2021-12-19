@@ -7,7 +7,7 @@ import { FaShoppingBasket } from 'react-icons/fa'
 export default function Idolaunchpad() {
   return (
     <div>
-      <section className='bg-gray-900 py-32'>
+      <section className='bg-darkindigo py-32'>
         <div className='container'>
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
             <div className='flex items-center'>

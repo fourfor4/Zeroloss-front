@@ -16,19 +16,18 @@ export default function Navbar() {
           <div className='ml-auto'></div>
           <div className='hidden lg:block flex items-center'>
             <Link to={'/'}><span className='p-2 cursor-pointer font-semibold text-sm hover:text-gray-300'>Home</span></Link>
-            <span className='p-2 cursor-pointer font-semibold text-sm hover:text-gray-300'>Launch App</span>
+            <Link to={'/defi'}><span className='p-2 cursor-pointer font-semibold text-sm hover:text-gray-300'>Launch App</span></Link>
             <Link to={'/idolaunchpad'}><span className='p-2 cursor-pointer font-semibold text-sm hover:text-gray-300'>IDO Launchpad</span></Link>
-            <span className='p-2 cursor-pointer font-semibold text-sm hover:text-gray-300'>Rug Checker</span>
-            <span className='p-2 cursor-pointer font-semibold text-sm hover:text-gray-300'>Rug Checker</span>
+            <Link to={'/rugchecker'}><span className='p-2 cursor-pointer font-semibold text-sm hover:text-gray-300'>Rug Checker</span></Link>
             <span className='p-2 cursor-pointer font-semibold text-sm hover:text-gray-300'>LightPaper</span>
             <span className='p-2 cursor-pointer font-semibold text-sm hover:text-gray-300'>FAQ</span>
           </div>
           <button className='ml-3 rounded-md font-semibold border-1 border-white py-2 px-7 hover:border-gray-300 hover:text-gray-300'>
             Buy
           </button>
-          <button className='ml-2 rounded-md text-black font-semibold bg-gold border-1 border-gold py-2 px-7'>
+          <Link to={'/defi'}><button className='ml-2 rounded-md text-black font-semibold bg-gold border-1 border-gold py-2 px-7'>
             DeFi
-          </button>
+          </button></Link>
           <div className='ml-3 lg:hidden'>
             <Hamburger toggled={sideBarOpen} toggle={setSideBarOpen} />
           </div>
